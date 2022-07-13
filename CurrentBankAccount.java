@@ -1,11 +1,21 @@
 import java.util.Scanner;
 
+/**
+ * @author JibinThomas
+ * This Class is used for manipulating Current Bank Account Holder details
+ */
 public class CurrentBankAccount extends BankAccount {
 
+	/**
+	 * This Method is used for Deposit Function
+	 */
 	public static double deposit() {
 		return BankAccount.addBalance();
 	}
 
+	/**
+	 * This Method is used for Withdrawal Function
+	 */
 	public static void withdrawl() {
 		if (BankAccount.getBalance() == 0.00) {
 			System.out.println("Your Account Balance is : " + BankAccount.getBalance()

@@ -1,14 +1,25 @@
 import java.util.Scanner;
 
+/**
+ * @author JibinThomas
+ * This Class is used for the Savings Bank Account Holders
+ */
 public class SavingsBankAccount extends BankAccount {
 
 	private static double minBal = 500.00;
 	private static double transLimit = 50000.00;
 
+	/**
+	 * This Method is used for Deposit Function
+	 * @return
+	 */
 	public static double deposit() {
 		return BankAccount.addBalance();
 	}
 
+	/**
+	 * This Method is used for Withdrawal Function
+	 */
 	public static void withdrawl() {
 		if (BankAccount.getBalance() == 0.00) {
 			System.out.println("Total Withdawl value : " + getTotalWithdrawAmt());
